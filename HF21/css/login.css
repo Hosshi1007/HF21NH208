@@ -84,4 +84,7 @@
 @media(min-width: 768px){
     .smart-main{display:none; }
 }
-
+_:lang(x)+_:-webkit-full-screen-document, .smart-body {
+    display: grid;
+    place-items: center;  
+ }
