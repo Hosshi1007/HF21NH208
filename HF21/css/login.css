@@ -86,12 +86,14 @@
 }
 /* 最新のsafari用 */
 _::-webkit-full-page-media, _:future, :root .smart-body {
+    padding: 100px;
         display: grid;
         place-items: center;
 }
 /* 古いsafari用 */
 @media screen and (-webkit-min-device-pixel-ratio:0) {
 	::i-block-chrome, .smart-body {
+        padding: 100px;
         display: grid;
         place-items: center;
     }
