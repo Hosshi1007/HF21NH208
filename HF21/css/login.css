@@ -84,7 +84,15 @@
 @media(min-width: 768px){
     .smart-main{display:none; }
 }
-_:lang(x)+_:-webkit-full-screen-document, .smart-body {
-    display: grid;
-    place-items: center;  
- }
+/* 最新のsafari用 */
+_::-webkit-full-page-media, _: .smart-body {
+        display: grid;
+        place-items: center;
+}
+/* 古いsafari用 */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    :: .smart-body {
+        display: grid;
+        place-items: center;
+    }
+}
