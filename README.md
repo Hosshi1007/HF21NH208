@@ -1,5 +1,4 @@
 # HF21NH208
-あいうえお
 # GitMind URL
 https://gitmind.com/app/docs/mvz2q59a
 # FrontEnd URL
