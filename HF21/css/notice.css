@@ -55,7 +55,7 @@
 }
 #lamp{
   width:50%; 
-  height:3px;
+  height:2px;
   background:#00e6d3;/*アニメーションバーの色*/
   display:block;
   position:absolute;
