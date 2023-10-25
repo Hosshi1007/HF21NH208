@@ -1,4 +1,4 @@
-#smart-header{
+.smart-header{
   width: 100%;
   background-color: #f5f5f5;
   z-index: 100;
@@ -190,5 +190,5 @@
     /*PC表示の際はボトムメニューは表示しない*/
 @media(min-width: 768px){
     .smart-header{display:none; }
-    .smart-main{display:none; }
+    #smart-main{display:none; }
 }
