@@ -1,4 +1,5 @@
 /*=============== swiperのcss ===============*/
 const swiper = new Swiper(".swiper", {
-   direction: "vertical",
+   //下スクロールにする
+   //direction: "vertical",
 });
