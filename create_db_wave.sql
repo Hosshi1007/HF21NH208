@@ -8,7 +8,7 @@ drop table IF EXISTS t_wave;
 drop table IF EXISTS t_follow;
 
 create table t_user(userID nvarchar(20),user_name nvarchar(20) not null,user_password nvarchar(20) not null,comment nvarchar(300),user_img nvarchar(50), primary key(userID));
-create table t_wave(waveID int,userID nvarchar(20) not null,wave_contents nvarchar(120) not null,imgID1 nvarchar(50),imgID2 nvarchar(50),imgID3 nvarchar(50),imgID4 nvarchar(50), primary key(waveID));
+create table t_wave(waveID int,userID nvarchar(20) not null,wave_contents nvarchar(1000) not null,imgID1 nvarchar(50),imgID2 nvarchar(50),imgID3 nvarchar(50),imgID4 nvarchar(50), primary key(waveID));
 create table t_follow(followID int,tofollow nvarchar(20) not null,be_follow nvarchar(20) not null,primary key(followID));
 
 insert into t_user (userID,user_name,user_password) values ('yamada','山田太郎','yamada');
