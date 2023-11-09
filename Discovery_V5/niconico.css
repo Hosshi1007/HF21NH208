@@ -1,9 +1,9 @@
 @charset "utf-8";
 
 .container {
-   /* border: 1px solid #000; */
+   border: 1px solid #000;
    width: 100%;
-   height: auto;
+   /* height: auto; */
    margin: 0 auto;
    overflow: hidden;
    position: relative;
