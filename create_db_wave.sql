@@ -42,7 +42,12 @@ insert into t_wave (waveID,userID,wave_contents,imgID1,imgID2,imgID3)
           スクロールテスト用<br>
           スクロールテスト用<br>','/HF21/image/DSC_0137.JPG','/HF21/image/1.JPG','/HF21/image/2.JPG');
 
+
           
+
+          
+
+
 
 
 
