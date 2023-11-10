@@ -9,7 +9,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
-public class DBaccess_Beans implements Serializable{
+public class wave_select_Beans implements Serializable{
 	//DB接続定義
 	/* DB:URL*/
 	final String URL = "jdbc:mysql://localhost/nhs20733db?useUnicode=true&characterEncoding=UTF-8";

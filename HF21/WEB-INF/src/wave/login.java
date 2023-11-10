@@ -33,7 +33,7 @@ public class login extends HttpServlet{
 
 		try {
 			//Beanを呼び出してインスタンス化
-			wave.wave_select_Beans select_Beans = new wave.wave_select_Beans();
+			Beans.wave_select_Beans select_Beans = new Beans.wave_select_Beans();
 
 			//プロパティのセット
 			//テーブル

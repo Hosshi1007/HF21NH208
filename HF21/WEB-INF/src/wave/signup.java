@@ -51,7 +51,7 @@ public class signup extends HttpServlet {
 		// パスワードが正しければ
 		try {
 			// Beansを呼び出してインスタンス化
-			wave.wave_select_Beans2 select_Beans = new wave.wave_select_Beans2();
+			Beans.wave_select_Beans2 select_Beans = new Beans.wave_select_Beans2();
 
 			// プロパティのセット(クラス名)
 			select_Beans.setFields("*");

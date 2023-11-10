@@ -6,7 +6,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class DBinsert_Beans implements Serializable{
+public class wave_update_bean implements Serializable{
 	//DB接続定義
 	/* DB:URL*/
 	final String URL = "jdbc:mysql://localhost/nhs20733db?useUnicode=true&characterEncoding=UTF-8";
@@ -26,15 +26,15 @@ public class DBinsert_Beans implements Serializable{
 	//プロパティ定義
 	String Conditions = "";
 	String table_name = "";
-	String fields = "*";
+	String status = "";
 
 	//コンストラクタ定義
-	public DBinsert_Beans() {
+	public DBupdate_bean() {
 		super();
 	}
 
 	//DBアクセス
-	public void DBinsert() {
+	public void DBupdate() {
 		try {
 			//MySQLローディング
 			Class.forName(DRIVER);
@@ -45,13 +45,12 @@ public class DBinsert_Beans implements Serializable{
 			//SQL実行
 			Statement stmt = con.createStatement();
 			StringBuffer query = new StringBuffer();
-			query.append("insert into ");
+			query.append("update ");
 			query.append(table_name);
-			query.append(" (");
-			query.append(fields);
-			query.append(") values (");
+			query.append(" set ");
+			query.append(status);
+			query.append(" where ");
 			query.append(Conditions);
-			query.append(")");
 
 			System.out.println(query.toString());
 
@@ -76,13 +75,15 @@ public class DBinsert_Beans implements Serializable{
 		//テーブル名をそのまま入力(例:"t_user")
 		table_name = inTable;
 	}
-	public void setFields(String inFields) {
-		//フィールド名をカンマ(,)区切りで入力(例:"user_name,user_password")
-		fields = inFields;
+	public void setStatus(String inStatus) {
+		//更新内容を「列名」=「値」の形でカンマ(,)区切りにして入力
+		//(例:"user_name = '佐藤次郎',password = 'root123'")
+		status = inStatus;
 	}
-	public void setstatus(String instatus) {
-		//登録内容をカンマ区切りで入力(例:"sakaguchi,pass12345")
-		Conditions = instatus;
+	public void setConditions(String inConditions) {
+		//更新するレコードの主キーを指定する
+		//(例:"user_ID = '00001'")
+		Conditions = inConditions;
 	}
 
 	//アクセサメソッド(getter)
