@@ -19,7 +19,6 @@ insert into t_user (userID,user_name,user_password) values ('eeeee','eeeee','eee
 insert into t_user (userID,user_name,user_password,comment,user_img) values ('take','武豊','take','HAL名古屋に通ってるおじさん','/HF21/image/usericon1.jpg');
 insert into t_user (userID,user_name,user_password) values ('yosiman','よしまんTV','yosiman');
 insert into t_user (userID,user_name,user_password) values ('shinnichi','♡工藤新一＠蘭しか勝たん♡','kudou');
-
 insert into t_user (userID,user_name,user_password) values ('white__beach__','白浜','sirahama');
 insert into t_user (userID,user_name,user_password) values ('hosshi454519119','ホッシー＠APEXガチ勢','kouketu');
 insert into t_user (userID,user_name,user_password) values ('masamasa','まさき','murayama');
