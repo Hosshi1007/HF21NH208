@@ -8,7 +8,7 @@ drop table IF EXISTS t_wave;
 drop table IF EXISTS t_follow;
 
 create table t_user(userID nvarchar(20),user_name nvarchar(20) not null,user_password nvarchar(20) not null,comment nvarchar(300) default 'こんにちは！',user_img nvarchar(50) default 'def_userimg', primary key(userID));
-create table t_wave(waveID serial,userID nvarchar(20) not null,wave_contents nvarchar(1000) not null,imgID1 nvarchar(50) default 'none',imgID2 nvarchar(50) default 'none',imgID3 nvarchar(50) default 'none',imgID4 nvarchar(50) default 'none', primary key(waveID));
+create table t_wave(waveID serial,userID nvarchar(20) not null,wave_contents nvarchar(1000) not null,imgID1 nvarchar(50) default 'none',imgID2 nvarchar(50) default 'none',imgID3 nvarchar(50) default 'none',imgID4 nvarchar(50) default 'none',posttime datetime not null primary key(waveID));
 create table t_follow(followID int,tofollow nvarchar(20) not null,be_follow nvarchar(20) not null,primary key(followID));
 
 insert into t_user (userID,user_name,user_password) values ('aaaaa','aaaaa','aaaaa');
@@ -30,7 +30,7 @@ insert into t_user (userID,user_name,user_password) values ('TekkaMaki_0141','�
 
 
 
-insert into t_wave (userID,wave_contents,imgID1,imgID2,imgID3) 
+insert into t_wave (userID,wave_contents,imgID1,imgID2,imgID3,posttime) 
         values ('take','先日、第9回はんだ山車まつりに行ってきました！<br>
           山車を引っ張る曳き方の掛け声や囃子方の笛の音色を聞きつつ<br>
           沢山の屋台やキッチンカーでおいしいものを食べては飲んでました！笑<br>
@@ -49,79 +49,79 @@ insert into t_wave (userID,wave_contents,imgID1,imgID2,imgID3)
           スクロールテスト用<br>
           スクロールテスト用<br>
           スクロールテスト用<br>
-          スクロールテスト用<br>','/HF21/image/DSC_0137.JPG','/HF21/image/1.JPG','/HF21/image/2.JPG');
+          スクロールテスト用<br>','/HF21/image/DSC_0137.JPG','/HF21/image/1.JPG','/HF21/image/2.JPG',2023-11-01 12:00:00);
 
-insert into t_wave (userID,wave_contents,imgID1,imgID2,imgID3) 
+insert into t_wave (userID,wave_contents,imgID1,imgID2,imgID3,posttime) 
         values ('take','テストデータです！あああああああああああああああああああああああ'
                 ,'/HF21/image/DSC_0137.JPG'
                 ,'/HF21/image/1.JPG'
-                ,'/HF21/image/2.JPG');
+                ,'/HF21/image/2.JPG'2023-11-01 12:00:00);
 
-insert into t_wave (userID,wave_contents,imgID1,imgID2,imgID3) 
+insert into t_wave (userID,wave_contents,imgID1,imgID2,imgID3,posttime) 
         values ('take','テストデータです！いいいいいいいいいいいいいいいいいいいいいい'
                 ,'/HF21/image/DSC_0137.JPG'
                 ,'/HF21/image/1.JPG'
-                ,'/HF21/image/2.JPG');
+                ,'/HF21/image/2.JPG',2023-11-02 14:30:00);
 
-insert into t_wave (userID,wave_contents,imgID1) 
+insert into t_wave (userID,wave_contents,imgID1,posttime) 
         values ('take','テストデータです！ううううううううううううううううううううう'
-                ,'/HF21/image/DSC_0137.JPG');
+                ,'/HF21/image/DSC_0137.JPG',2023-11-03 23:15:00);
 
-insert into t_wave (userID,wave_contents,imgID1,imgID2,imgID3,imgID4) 
+insert into t_wave (userID,wave_contents,imgID1,imgID2,imgID3,imgID4,posttime) 
         values ('take','テストデータです！ええええええええええええええええええええええええ'
                 ,'/HF21/image/DSC_0137.JPG'
                 ,'/HF21/image/1.JPG'
                 ,'/HF21/image/1.JPG'
-                ,'/HF21/image/2.JPG');
+                ,'/HF21/image/2.JPG',2023-11-04 08:20:00);
 
 
-insert into t_wave (userID,wave_contents,imgID1,imgID2,imgID3) 
+insert into t_wave (userID,wave_contents,imgID1,imgID2,imgID3,posttime) 
         values ('take','テストデータです！おお'
                 ,'/HF21/image/DSC_0137.JPG'
                 ,'/HF21/image/1.JPG'
-                ,'/HF21/image/2.JPG');
+                ,'/HF21/image/2.JPG',2023-11-01 12:00:00);
 
 
-insert into t_wave (userID,wave_contents,imgID1,imgID2) 
+insert into t_wave (userID,wave_contents,imgID1,imgID2,posttime) 
         values ('take','テストデータです！かかかかかかかかかかかかかかかかかかかかかかかかかかかかかかかかかかかか'
                 ,'/HF21/image/DSC_0137.JPG'
-                ,'/HF21/image/1.JPG');
+                ,'/HF21/image/1.JPG',2023-11-01 12:00:00);
 
-insert into t_wave (userID,wave_contents,imgID1,imgID2,imgID3) 
+insert into t_wave (userID,wave_contents,imgID1,imgID2,imgID3,posttime) 
         values ('shinnichi','テストデータです！あああああああああああああああああああああああ'
                 ,'/HF21/image/DSC_0137.JPG'
                 ,'/HF21/image/1.JPG'
-                ,'/HF21/image/2.JPG');
+                ,'/HF21/image/2.JPG',2023-11-01 12:00:00);
 
-insert into t_wave (userID,wave_contents,imgID1,imgID2,imgID3) 
+insert into t_wave (userID,wave_contents,imgID1,imgID2,imgID3,posttime) 
         values ('shinnichi','テストデータです！いいいいいいいいいいいいいいいいいいいいいい'
                 ,'/HF21/image/DSC_0137.JPG'
                 ,'/HF21/image/1.JPG'
-                ,'/HF21/image/2.JPG');
+                ,'/HF21/image/2.JPG',2023-11-01 12:00:00);
 
-insert into t_wave (userID,wave_contents,imgID1) 
+insert into t_wave (userID,wave_contents,imgID1,posttime) 
         values ('masamasa','テストデータです！ううううううううううううううううううううう'
-                ,'/HF21/image/DSC_0137.JPG');
+                ,'/HF21/image/DSC_0137.JPG',2023-11-01 12:00:00);
 
-insert into t_wave (userID,wave_contents,imgID1,imgID2,imgID3,imgID4) 
+insert into t_wave (userID,wave_contents,imgID1,imgID2,imgID3,imgID4,posttime) 
         values ('masamasa','テストデータです！ええええええええええええええええええええええええ'
                 ,'/HF21/image/DSC_0137.JPG'
                 ,'/HF21/image/1.JPG'
                 ,'/HF21/image/1.JPG'
-                ,'/HF21/image/2.JPG');
+                ,'/HF21/image/2.JPG',2023-11-01 12:00:00);
 
 
-insert into t_wave (userID,wave_contents,imgID1,imgID2,imgID3) 
+insert into t_wave (userID,wave_contents,imgID1,imgID2,imgID3,posttime) 
         values ('hosshi454519119','テストデータです！おお'
                 ,'/HF21/image/DSC_0137.JPG'
                 ,'/HF21/image/1.JPG'
-                ,'/HF21/image/2.JPG');
+                ,'/HF21/image/2.JPG',2023-11-01 12:00:00);
 
 
-insert into t_wave (userID,wave_contents,imgID1,imgID2) 
+insert into t_wave (userID,wave_contents,imgID1,imgID2,posttime) 
         values ('hosshi454519119','テストデータです！かかかかかかかかかかかかかかかかかかかかかかかかかかかかかかかかかかかか'
                 ,'/HF21/image/DSC_0137.JPG'
-                ,'/HF21/image/1.JPG');
+                ,'/HF21/image/1.JPG',2023-11-01 12:00:00);
 
 
 insert into t_follow (followID,tofollow,be_follow) values (1,'take','yamada');
