@@ -86,7 +86,41 @@ insert into t_wave (userID,wave_contents,imgID1,imgID2)
                 ,'/HF21/image/DSC_0137.JPG'
                 ,'/HF21/image/1.JPG');
 
+insert into t_wave (userID,wave_contents,imgID1,imgID2,imgID3) 
+        values ('shinnichi','テストデータです！あああああああああああああああああああああああ'
+                ,'/HF21/image/DSC_0137.JPG'
+                ,'/HF21/image/1.JPG'
+                ,'/HF21/image/2.JPG');
 
+insert into t_wave (userID,wave_contents,imgID1,imgID2,imgID3) 
+        values ('shinnichi','テストデータです！いいいいいいいいいいいいいいいいいいいいいい'
+                ,'/HF21/image/DSC_0137.JPG'
+                ,'/HF21/image/1.JPG'
+                ,'/HF21/image/2.JPG');
+
+insert into t_wave (userID,wave_contents,imgID1) 
+        values ('masamasa','テストデータです！ううううううううううううううううううううう'
+                ,'/HF21/image/DSC_0137.JPG');
+
+insert into t_wave (userID,wave_contents,imgID1,imgID2,imgID3,imgID4) 
+        values ('masamasa','テストデータです！ええええええええええええええええええええええええ'
+                ,'/HF21/image/DSC_0137.JPG'
+                ,'/HF21/image/1.JPG'
+                ,'/HF21/image/1.JPG'
+                ,'/HF21/image/2.JPG');
+
+
+insert into t_wave (userID,wave_contents,imgID1,imgID2,imgID3) 
+        values ('hosshi454519119','テストデータです！おお'
+                ,'/HF21/image/DSC_0137.JPG'
+                ,'/HF21/image/1.JPG'
+                ,'/HF21/image/2.JPG');
+
+
+insert into t_wave (userID,wave_contents,imgID1,imgID2) 
+        values ('hosshi454519119','テストデータです！かかかかかかかかかかかかかかかかかかかかかかかかかかかかかかかかかかかか'
+                ,'/HF21/image/DSC_0137.JPG'
+                ,'/HF21/image/1.JPG');
 
 
 insert into t_follow (followID,tofollow,be_follow) values (1,'take','yamada');
