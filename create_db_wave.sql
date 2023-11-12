@@ -11,13 +11,11 @@ create table t_user(userID nvarchar(20),user_name nvarchar(20) not null,user_pas
 create table t_wave(waveID serial,userID nvarchar(20) not null,wave_contents nvarchar(1000) not null,imgID1 nvarchar(50) default 'none',imgID2 nvarchar(50) default 'none',imgID3 nvarchar(50) default 'none',imgID4 nvarchar(50) default 'none', primary key(waveID));
 create table t_follow(followID int,tofollow nvarchar(20) not null,be_follow nvarchar(20) not null,primary key(followID));
 
-insert into t_user (userID,user_name,user_password) values ('yamada','山田太郎','yamada');
 insert into t_user (userID,user_name,user_password) values ('aaaaa','aaaaa','aaaaa');
 insert into t_user (userID,user_name,user_password) values ('bbbbb','bbbbb','bbbbb');
 insert into t_user (userID,user_name,user_password) values ('ccccc','ccccc','ccccc');
 insert into t_user (userID,user_name,user_password) values ('ddddd','ddddd','ddddd');
 insert into t_user (userID,user_name,user_password) values ('eeeee','eeeee','eeeee');
-insert into t_user (userID,user_name,user_password) values ('takahashi','高橋雄太','takahashi');
 insert into t_user (userID,user_name,user_password,comment,user_img) values ('take','武豊','take','HAL名古屋に通ってるおじさん','/HF21/image/usericon1.jpg');
 insert into t_user (userID,user_name,user_password) values ('shinnichi','よしまんTV','yosimann');
 insert into t_user (userID,user_name,user_password) values ('white__beach__','白浜','sirahama');
