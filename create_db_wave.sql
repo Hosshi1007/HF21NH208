@@ -49,73 +49,73 @@ insert into t_wave (userID,wave_contents,imgID1,imgID2,imgID3,posttime)
           スクロールテスト用<br>
           スクロールテスト用<br>
           スクロールテスト用<br>
-          スクロールテスト用<br>','/HF21/image/DSC_0137.JPG','/HF21/image/1.JPG','/HF21/image/2.JPG','2019-10-04 15:25:07');
+          スクロールテスト用<br>','/HF21/image/DSC_0137.JPG','/HF21/image/1.JPG','/HF21/image/2.JPG','2023-10-28 20:25:07');
 
 insert into t_wave (userID,wave_contents,imgID1,imgID2,imgID3,posttime) 
         values ('take','テストデータです！あああああああああああああああああああああああ'
                 ,'/HF21/image/DSC_0137.JPG'
                 ,'/HF21/image/1.JPG'
-                ,'/HF21/image/2.JPG'2023-11-01 12:00:00);
+                ,'/HF21/image/2.JPG','2023-10-04 15:25:07');
 
 insert into t_wave (userID,wave_contents,imgID1,imgID2,imgID3,posttime) 
         values ('take','テストデータです！いいいいいいいいいいいいいいいいいいいいいい'
                 ,'/HF21/image/DSC_0137.JPG'
                 ,'/HF21/image/1.JPG'
-                ,'/HF21/image/2.JPG',2023-11-02 14:30:00);
+                ,'/HF21/image/2.JPG','2023-10-24 15:25:07');
 
 insert into t_wave (userID,wave_contents,imgID1,posttime) 
         values ('take','テストデータです！ううううううううううううううううううううう'
-                ,'/HF21/image/DSC_0137.JPG',2023-11-03 23:15:00);
+                ,'/HF21/image/DSC_0137.JPG','2023-10-12 15:25:07');
 
 insert into t_wave (userID,wave_contents,imgID1,imgID2,imgID3,imgID4,posttime) 
         values ('take','テストデータです！ええええええええええええええええええええええええ'
                 ,'/HF21/image/DSC_0137.JPG'
                 ,'/HF21/image/1.JPG'
                 ,'/HF21/image/1.JPG'
-                ,'/HF21/image/2.JPG',2023-11-04 08:20:00);
+                ,'/HF21/image/2.JPG','2019-10-03 15:26:07');
 
 
 insert into t_wave (userID,wave_contents,imgID1,imgID2,imgID3,posttime) 
         values ('take','テストデータです！おお'
                 ,'/HF21/image/DSC_0137.JPG'
                 ,'/HF21/image/1.JPG'
-                ,'/HF21/image/2.JPG',2023-11-01 12:00:00);
+                ,'/HF21/image/2.JPG','2019-11-04 12:45:07');
 
 
 insert into t_wave (userID,wave_contents,imgID1,imgID2,posttime) 
         values ('take','テストデータです！かかかかかかかかかかかかかかかかかかかかかかかかかかかかかかかかかかかか'
                 ,'/HF21/image/DSC_0137.JPG'
-                ,'/HF21/image/1.JPG',2023-11-01 12:00:00);
+                ,'/HF21/image/1.JPG','2019-10-11 15:25:07');
 
 insert into t_wave (userID,wave_contents,imgID1,imgID2,imgID3,posttime) 
         values ('shinnichi','テストデータです！あああああああああああああああああああああああ'
                 ,'/HF21/image/DSC_0137.JPG'
                 ,'/HF21/image/1.JPG'
-                ,'/HF21/image/2.JPG',2023-11-01 12:00:00);
+                ,'/HF21/image/2.JPG','2019-10-04 15:25:07');
 
 insert into t_wave (userID,wave_contents,imgID1,imgID2,imgID3,posttime) 
         values ('shinnichi','テストデータです！いいいいいいいいいいいいいいいいいいいいいい'
                 ,'/HF21/image/DSC_0137.JPG'
                 ,'/HF21/image/1.JPG'
-                ,'/HF21/image/2.JPG',2023-11-01 12:00:00);
+                ,'/HF21/image/2.JPG','2019-10-04 15:25:07');
 
 insert into t_wave (userID,wave_contents,imgID1,posttime) 
         values ('masamasa','テストデータです！ううううううううううううううううううううう'
-                ,'/HF21/image/DSC_0137.JPG',2023-11-01 12:00:00);
+                ,'/HF21/image/DSC_0137.JPG','2019-10-04 15:25:07');
 
 insert into t_wave (userID,wave_contents,imgID1,imgID2,imgID3,imgID4,posttime) 
         values ('masamasa','テストデータです！ええええええええええええええええええええええええ'
                 ,'/HF21/image/DSC_0137.JPG'
                 ,'/HF21/image/1.JPG'
                 ,'/HF21/image/1.JPG'
-                ,'/HF21/image/2.JPG',2023-11-01 12:00:00);
+                ,'/HF21/image/2.JPG','2019-10-04 15:25:07');
 
 
 insert into t_wave (userID,wave_contents,imgID1,imgID2,imgID3,posttime) 
         values ('hosshi454519119','テストデータです！おお'
                 ,'/HF21/image/DSC_0137.JPG'
                 ,'/HF21/image/1.JPG'
-                ,'/HF21/image/2.JPG',2023-11-01 12:00:00);
+                ,'/HF21/image/2.JPG','2019-10-04 15:25:07');
 
 
 insert into t_wave (userID,wave_contents,imgID1,imgID2,posttime) 
