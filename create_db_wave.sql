@@ -49,7 +49,7 @@ insert into t_wave (userID,wave_contents,imgID1,imgID2,imgID3,posttime)
           スクロールテスト用<br>
           スクロールテスト用<br>
           スクロールテスト用<br>
-          スクロールテスト用<br>','/HF21/image/DSC_0137.JPG','/HF21/image/1.JPG','/HF21/image/2.JPG',2023-11-01 12:00:00);
+          スクロールテスト用<br>','/HF21/image/DSC_0137.JPG','/HF21/image/1.JPG','/HF21/image/2.JPG','2019-10-04 15:25:07');
 
 insert into t_wave (userID,wave_contents,imgID1,imgID2,imgID3,posttime) 
         values ('take','テストデータです！あああああああああああああああああああああああ'
