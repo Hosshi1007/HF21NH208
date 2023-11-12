@@ -121,7 +121,7 @@ insert into t_wave (userID,wave_contents,imgID1,imgID2,imgID3,posttime)
 insert into t_wave (userID,wave_contents,imgID1,imgID2,posttime) 
         values ('hosshi454519119','テストデータです！かかかかかかかかかかかかかかかかかかかかかかかかかかかかかかかかかかかか'
                 ,'/HF21/image/DSC_0137.JPG'
-                ,'/HF21/image/1.JPG',2023-11-01 12:00:00);
+                ,'/HF21/image/1.JPG','2019-10-04 15:25:07');
 
 
 insert into t_follow (followID,tofollow,be_follow) values (1,'take','yamada');
