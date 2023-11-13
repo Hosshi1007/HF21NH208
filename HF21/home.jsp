@@ -1,3 +1,4 @@
+<%@page import="wave.Caltime"%>
 <%@page import="com.sun.rowset.internal.Row"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <% response.setContentType("text/html; charset=UTF-8"); %>
@@ -28,8 +29,9 @@
 		response.sendRedirect("/HF21/login.html");
 	}
 
-	//wave検索
-
+	//timesago計算用クラス呼び出し
+	Caltime cal = new Caltime();
+	String result = "";
 
 
 %>
@@ -40,80 +42,130 @@
 <html lang="ja">
 
   <head>
+	<!-- bean紐づけ -->
+  	<jsp:useBean id="get_wave" scope="request" class="wave.wave_select_Beans" />
+  	<%
+		ArrayList tbl = get_wave.getTbl();
+		ArrayList row = new ArrayList();
+	%>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
-    <link rel="stylesheet"  href="/HF21/css/reset.css">
-    <link rel="stylesheet"  href="/HF21/css/format.css">
-    <link rel="stylesheet"  href="/HF21/css/home.css">
-    <link rel="stylesheet"  href="/HF21/css/scroll.css">
+    <link rel="stylesheet" type="text/css" href="/HF21/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/HF21/css/format.css">
+    <link rel="stylesheet" type="text/css" href="/HF21/css/scroll.css">
+    <link rel="stylesheet" type="text/css" href="/HF21/css/home.css">
+    <link rel="stylesheet" type="text/css" href="/HF21/css/hamburger.css">
+
+    <script type="text/javascript" src="/HF21/js/caltime.js"></script>
 
     <title>Wave Home</title>
   </head>
 
   <body>
 
-<!--- スマートフォン用タブ--->
-<header class="smart-header">
-    <div id="scrollArea">
-    <div class="head">
-  <a href="#">
-    <img class="logo" src="/HF21/image/logo.svg" alt="ロゴ">
-  </a>
-  <a href="post.html">
-    <img class="plus" src="/HF21/image/plus.png" alt="プラス">
-  </a>
-</div>
+	<!--- スマートフォン用タブ--->
+	<header class="smart-header">
+	    <div id="scrollArea">
+	    <div class="head">
+	  <a href="#">
+	    <img class="logo" src="/HF21/image/logo.svg" alt="ロゴ">
+	  </a>
+	  <a href="post.html">
+	    <img class="plus" src="/HF21/image/plus.png" alt="プラス">
+	  </a>
+	</div>
 
-<div class='tabs'>
-  <div class='tab-buttons'>
-    <span class='content1'>おすすめ</span>
-    <span class='content2'>フォロー中</span>
-    <div id='lamp' class='content1'></div>
-  </div>
-  </div>
-</div>
-</header>
+	<div class='tabs'>
+	  <div class='tab-buttons'>
+	    <span class='content1'>おすすめ</span>
+	    <span class='content2'>フォロー中</span>
+	    <div id='lamp' class='content1'></div>
+	  </div>
+	  </div>
+	</div>
+	</header>
 
   <!--スマートフォン用メイン -->
   <main class="smart-main">
+	<div class='tab-content'>
 
-  <div class='tab-content'>
-
-    <!--おすすめ -->
     <div class='content1'>
-        <div class="post"><a href="/HF21/wave.jsp"><%= session_user_name %><%= session_userID %></a></div>
-        <div class="post"><a href="wave.html">sample2</a></div>
-        <div class="post"><a href="wave.html">sample3</a></div>
-        <div class="post"><a href="wave.html">sample4</a></div>
-        <div class="post"><a href="wave.html">sample5</a></div>
-        <div class="post"><a href="wave.html">sample6</a></div>
-        <div class="post"><a href="wave.html">sample7</a></div>
-        <div class="post"><a href="wave.html">sample8</a></div>
-        <div class="post"><a href="wave.html">sample9</a></div>
-        <div class="post"><a href="wave.html">sample10</a></div>
-    </div>
+		<% for(int i=0; i<tbl.size(); i++){
+			row = (ArrayList)tbl.get(i);%>
+			<% result = cal.caltime((String)row.get(7));%>
+            <div class="post">
+                <div class="hsp12p"></div>
+                <div class="xyz">
+                    <div class="picture"><img class="maru" src="/HF21/image/usericon1.jpg" alt="picture"></div>
+
+                    <div class="y">
+                        <div class="z">
+                            <div class="username"><%= (String)row.get(1) %></div>
+                            <div class="userid">@<%= (String)row.get(0) %></div>
+                            <div class="timesago">･<%= result %></div>
+                        </div>
+
+                        <div class="hsp3p"></div>
+
+                        <div class="maincontent"><%= (String)row.get(2) %></div>
+                        <div class="hsp3p"></div>
+                        <div class="hasamu">
+                            <div class="icons">💭</div>
+                            <div class="icons">♡</div>
+                            <div class="icons">◯</div>
+                            <div class="icons">□</div>
+                            <div class="icons">…</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hsp6p"></div>
+            </div>
+          <% } %>
+          </div>
+
+
     <!--フォロー中 -->
     <div class='content2'>
-        <div class="post"><a href="wave.html">sample1</a></div>
-        <div class="post"><a href="wave.html">sample2</a></div>
-        <div class="post"><a href="wave.html">sample3</a></div>
-        <div class="post"><a href="wave.html">sample4</a></div>
-        <div class="post"><a href="wave.html">sample5</a></div>
-        <div class="post"><a href="wave.html">sample6</a></div>
-        <div class="post"><a href="wave.html">sample7</a></div>
-        <div class="post"><a href="wave.html">sample8</a></div>
-        <div class="post"><a href="wave.html">sample9</a></div>
-        <div class="post"><a href="wave.html">sample10</a></div>
-    </div>
+		<% for(int i=0; i<tbl.size(); i++){
+			row = (ArrayList)tbl.get(i);%>
+            <div class="post">
+                <div class="hsp12p"></div>
+                <div class="xyz">
+                    <div class="picture"><img class="maru" src="/HF21/image/usericon1.jpg" alt="picture"></div>
+
+                    <div class="y">
+                        <div class="z">
+                            <div class="username"><%= session_user_name %></div>
+                            <div class="userid">@<%= (String)row.get(1) %></div>
+                            <div class="timesago">·1分</div>
+                        </div>
+
+                        <div class="hsp3p"></div>
+
+                        <div class="maincontent"><%= (String)row.get(2) %></div>
+                        <div class="hsp3p"></div>
+                        <div class="hasamu">
+                            <div class="icons">💭</div>
+                            <div class="icons">♡</div>
+                            <div class="icons">◯</div>
+                            <div class="icons">□</div>
+                            <div class="icons">…</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hsp6p"></div>
+            </div>
+          <% } %>
+  </div>
   </div>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script type="text/javascript" src="/HF21/js/tab.js"></script>
   <script type="text/javascript" src="/HF21/js/scroll.js"></script>
 
   </main>
-    <!--スマートフォン用ボトムメニュー -->
+<!--スマートフォン用ボトムメニュー -->
 <ul class="bottom-menu">
     <li>
         <a href="/HF21/home.jsp">
