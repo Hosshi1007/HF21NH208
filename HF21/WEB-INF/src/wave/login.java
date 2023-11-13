@@ -39,7 +39,7 @@ public class login extends HttpServlet{
 			//テーブル
 			select_Beans.setTable("t_user");
 			//条件
-			select_Beans.setConditions("userID= '" + userIDStr + "'");
+			select_Beans.setConditions("userID = '" + userIDStr + "'");
 			//フィールド
 			select_Beans.setFields("*");
 
