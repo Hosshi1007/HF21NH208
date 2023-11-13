@@ -189,8 +189,35 @@ insert into t_wave (userID,wave_contents,imgID1,imgID2,posttime)
 insert into t_wave (userID,wave_contents,imgID1,imgID2,posttime) 
         values ('tuttakatuttaka','丸亀時間内に行って戻ってこれた!!!!!!!','2023-10-05 12:59:21'); 
 
+    insert into t_wave (userID,wave_contents,imgID1,imgID2,imgID3,posttime) 
+        values ('take','/HF21/image/10.JPG','2023-11-05 15:30:01');
+    
+insert into t_wave (userID,wave_contents,imgID1,imgID2,imgID3,posttime) 
+        values ('take','/HF21/image/11.JPG','2023-11-05 15:30:02');
 
+insert into t_wave (userID,wave_contents,imgID1,imgID2,imgID3,posttime) 
+        values ('take','/HF21/image/12.JPG','2023-11-05 15:30:03');
 
+insert into t_wave (userID,wave_contents,imgID1,imgID2,imgID3,posttime) 
+        values ('take','/HF21/image/13.JPG','2023-11-05 15:30:04');
+
+insert into t_wave (userID,wave_contents,imgID1,imgID2,imgID3,posttime) 
+        values ('take','/HF21/image/14.JPG','2023-11-05 15:30:05');
+
+insert into t_wave (userID,wave_contents,imgID1,imgID2,imgID3,posttime) 
+        values ('take','/HF21/image/15.JPG','2023-11-05 15:30:06');
+
+insert into t_wave (userID,wave_contents,imgID1,imgID2,imgID3,posttime) 
+        values ('take','/HF21/image/16.JPG','2023-11-05 15:30:07');
+
+ insert into t_wave (userID,wave_contents,imgID1,imgID2,imgID3,posttime) 
+        values ('take','/HF21/image/17.JPG','2023-11-05 15:30:08');
+
+insert into t_wave (userID,wave_contents,imgID1,imgID2,imgID3,posttime) 
+        values ('take','/HF21/image/18.JPG','2023-11-05 15:30:09');
+
+insert into t_wave (userID,wave_contents,imgID1,imgID2,imgID3,posttime) 
+        values ('take','/HF21/image/19.JPG','2023-11-05 15:30:10');
 
 insert into t_follow (followID,tofollow,be_follow) values (1,'take','yamada');
 insert into t_follow (followID,tofollow,be_follow) values (2,'yamada','take');
