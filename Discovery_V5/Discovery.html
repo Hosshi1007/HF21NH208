@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width" />
+      <meta name="viewport" content="initial-scale=1, viewport-fit=cover" />
+      <title>Discovery</title>
+      <link
+         rel="icon"
+         type="image/png"
+         href="icon/icon-16x16.png"
+         sizes="16x16"
+      />
+      <link
+         rel="apple-touch-icon"
+         href="icon/apple-touch-icon.png"
+         sizes="180x180"
+      />
+      <link rel="stylesheet" type="text/css" href="css/reset.css" />
+      <link rel="stylesheet" type="text/css" href="css/format.css" />
+      <link rel="stylesheet" type="text/css" href="css/search.css" />
+      <!-- Slick.jsのCSS -->
+      <link
+         rel="stylesheet"
+         type="text/css"
+         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
+      <link rel="stylesheet" type="text/css" href="slick_my.css" />
+      <!-- Slick.jsのJS -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <!-- ニコニコのようなコメントのCSS -->
+      <link rel="stylesheet" type="text/css" href="niconico.css" />
+   </head>
+
+   <body>
+      <!--- スマートフォン用タブ--->
+      <header class="smart-header">
+         <div class="head">
+            <form action="results.html" class="search">
+               <label>
+                  <input type="text" placeholder="気になるワード" />
+               </label>
+               <button type="submit" aria-label="検索"></button>
+            </form>
+         </div>
+      </header>
+
+      <!--スマートフォン用メイン -->
+      <main class="smart-main">
+         <!-- ニコニコのコメントのようなもの -->
+         <!-- <div class="container"> -->
+         <!-- <div class="slider5-wrap"> -->
+         <ul class="slider-5" id="js-slider-5">
+            <li><img src="img_11.jpg" alt="" /></li>
+            <li><img src="img_01.jpg" alt="" /></li>
+            <li><img src="img_22.jpg" alt="" /></li>
+            <li><img src="img_02.jpg" alt="" /></li>
+            <li><img src="img_33.jpg" alt="" /></li>
+            <li><img src="img_03.jpg" alt="" /></li>
+         </ul>
+         <!-- </div> -->
+         <div class="dots-5"></div>
+         <!-- </div> -->
+         <!-- Slick.jsのJS -->
+         <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+         <script src="slick_my.js"></script>
+         <!-- ニコニコのようなコメントのJS -->
+         <script src="niconico.js"></script>
+      </main>
+
+      <!--スマートフォン用ボトムメニュー -->
+      <ul class="bottom-menu">
+         <li>
+            <a href="home.html"> <img src="image/menu1.png" alt="ホーム" /></a>
+         </li>
+         <li>
+            <a href="search.html"> <img src="image/menu2.png" alt="検索" /></a>
+         </li>
+         <li>
+            <a href="notice.html"> <img src="image/menu3.png" alt="通知" /></a>
+         </li>
+         <li>
+            <a href="dm.html"> <img src="image/menu4.png" alt="dm" /></a>
+         </li>
+         <li>
+            <a href="profile.html">
+               <!-- プロフィール画像がなしの場合menu5.png -->
+               <img src="image/menu5.png" alt="プロフィール"
+            /></a>
+         </li>
+      </ul>
+   </body>
+</html>
