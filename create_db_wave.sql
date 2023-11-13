@@ -126,6 +126,71 @@ insert into t_wave (userID,wave_contents,imgID1,imgID2,posttime)
                 ,'/HF21/image/DSC_0137.JPG'
                 ,'/HF21/image/1.JPG','2019-10-04 15:25:07');
 
+insert into t_wave (userID,wave_contents,imgID1,imgID2,posttime) 
+        values ('TekkaMaki_0141','今日のおつまみ、なににしよっかなー');
+
+insert into t_wave (userID,wave_contents,imgID1,imgID2,posttime) 
+        values ('TekkaMaki_0141','酒が止まらないぜー');
+
+insert into t_wave (userID,wave_contents,imgID1,imgID2,posttime) 
+        values ('TekkaMaki_0141','ストゼロ最高だぜー');
+
+insert into t_wave (userID,wave_contents,imgID1,imgID2,posttime) 
+        values ('TekkaMaki_0141','あ゙ーー!!!!!!!!!!!!!!!!!!!!!!<br>
+        あ゙だまい゙でーーーーーーーーーー!!!!!!!<br>
+        の゙み゙すぎたーーーーーーーーーーーーーーーーーー!!!!!!!');
+
+insert into t_wave (userID,wave_contents,imgID1,imgID2,posttime) 
+        values ('hosshi454519119','うわーそれえぐいって!!');
+     
+insert into t_wave (userID,wave_contents,imgID1,imgID2,posttime) 
+        values ('hosshi454519119','普通に遅刻した');
+
+insert into t_wave (userID,wave_contents,imgID1,imgID2,posttime) 
+        values ('hosshi454519119','え!?それってどういう.....');
+
+insert into t_wave (userID,wave_contents,imgID1,imgID2,posttime) 
+        values ('hosshi454519119','あーなるほど、そういうことね');
+
+insert into t_wave (userID,wave_contents,imgID1,imgID2,posttime) 
+        values ('take','丸亀しか勝たん!!!');
+
+insert into t_wave (userID,wave_contents,imgID1,imgID2,posttime) 
+        values ('take','ういーす');
+
+insert into t_wave (userID,wave_contents,imgID1,imgID2,posttime) 
+        values ('take','まじで、だるい');
+
+insert into t_wave (userID,wave_contents,imgID1,imgID2,posttime) 
+        values ('take','肉食いに行くわ');
+
+insert into t_wave (userID,wave_contents,imgID1,imgID2,posttime) 
+        values ('shinnichi','120人全員片岡利幸になった<br>
+ウケル');
+
+insert into t_wave (userID,wave_contents,imgID1,imgID2,posttime) 
+        values ('shinnichi','とてつもなく腹痛い');
+
+insert into t_wave (userID,wave_contents,imgID1,imgID2,posttime) 
+        values ('shinnichi','胃に穴空いたわ');
+
+insert into t_wave (userID,wave_contents,imgID1,imgID2,posttime) 
+        values ('shinnichi','過敏性腸症候群ウヒョーー');
+
+insert into t_wave (userID,wave_contents,imgID1,imgID2,posttime) 
+        values ('tuttakatuttaka','うーん'); 
+
+insert into t_wave (userID,wave_contents,imgID1,imgID2,posttime) 
+        values ('tuttakatuttaka','やばい');  
+
+insert into t_wave (userID,wave_contents,imgID1,imgID2,posttime) 
+        values ('tuttakatuttaka','なんとかギリ....'); 
+
+insert into t_wave (userID,wave_contents,imgID1,imgID2,posttime) 
+        values ('tuttakatuttaka','丸亀RTA成功!!!!!!!'); 
+
+
+
 
 insert into t_follow (followID,tofollow,be_follow) values (1,'take','yamada');
 insert into t_follow (followID,tofollow,be_follow) values (2,'yamada','take');
