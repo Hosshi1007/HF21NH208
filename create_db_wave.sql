@@ -10,6 +10,7 @@ drop table IF EXISTS t_follow;
 create table t_user(userID nvarchar(20),user_name nvarchar(20) not null,user_password nvarchar(20) not null,comment nvarchar(300) default 'こんにちは！',user_img nvarchar(50) default 'def_userimg', primary key(userID));
 create table t_wave(waveID serial,userID nvarchar(20) not null,wave_contents nvarchar(1000) not null,imgID1 nvarchar(50) default 'none',imgID2 nvarchar(50) default 'none',imgID3 nvarchar(50) default 'none',imgID4 nvarchar(50) default 'none',posttime datetime not null, primary key(waveID));
 create table t_follow(followID int,tofollow nvarchar(20) not null,be_follow nvarchar(20) not null,primary key(followID));
+create table t_dm(dmID serial,id1 nvarchar(20) not null,id2 nvarchar(20) not null,flag varchar(1) default "0", primary key(dmID));
 
 insert into t_user (userID,user_name,user_password) values ('aaaaa','aaaaa','aaaaa');
 insert into t_user (userID,user_name,user_password) values ('bbbbb','bbbbb','bbbbb');
@@ -27,6 +28,8 @@ insert into t_user (userID,user_name,user_password) values ('hyarahyara','カワ
 insert into t_user (userID,user_name,user_password) values ('tosshi3333','ペクシス','hayasi');
 insert into t_user (userID,user_name,user_password) values ('tuttakatuttaka','ツッタカダーｗｗ','takada');
 insert into t_user (userID,user_name,user_password) values ('TekkaMaki_0141','鉄火巻＠委員長','mori');
+
+insert into t_user (id1,id2) values ('TekkaMaki_0141','take');
 
 
 
