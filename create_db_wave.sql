@@ -29,7 +29,7 @@ insert into t_user (userID,user_name,user_password) values ('tosshi3333','ペク
 insert into t_user (userID,user_name,user_password) values ('tuttakatuttaka','ツッタカダーｗｗ','takada');
 insert into t_user (userID,user_name,user_password) values ('TekkaMaki_0141','鉄火巻＠委員長','mori');
 
-insert into t_user (id1,id2) values ('TekkaMaki_0141','take');
+insert into t_dm (id1,id2) values ('TekkaMaki_0141','take');
 
 
 
