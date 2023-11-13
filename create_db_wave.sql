@@ -127,67 +127,67 @@ insert into t_wave (userID,wave_contents,imgID1,imgID2,posttime)
                 ,'/HF21/image/1.JPG','2019-10-04 15:25:07');
 
 insert into t_wave (userID,wave_contents,imgID1,imgID2,posttime) 
-        values ('TekkaMaki_0141','今日のおつまみ、なににしよっかなー');
+        values ('TekkaMaki_0141','今日のおつまみ、なににしよっかなー','2023-10-04 20:50:07');
 
 insert into t_wave (userID,wave_contents,imgID1,imgID2,posttime) 
-        values ('TekkaMaki_0141','酒が止まらないぜー');
+        values ('TekkaMaki_0141','酒が止まらないぜー','2023-10-04 21:10:40');
 
 insert into t_wave (userID,wave_contents,imgID1,imgID2,posttime) 
-        values ('TekkaMaki_0141','ストゼロ最高だぜー');
+        values ('TekkaMaki_0141','ストゼロ最高だぜー','2023-10-04 21:50:32');
 
 insert into t_wave (userID,wave_contents,imgID1,imgID2,posttime) 
         values ('TekkaMaki_0141','あ゙ーー!!!!!!!!!!!!!!!!!!!!!!<br>
         あ゙だまい゙でーーーーーーーーーー!!!!!!!<br>
-        の゙み゙すぎたーーーーーーーーーーーーーーーーーー!!!!!!!');
+        の゙み゙すぎたーーーーーーーーーーーーーーーーーー!!!!!!!','2023-10-05 09:34:16');
 
 insert into t_wave (userID,wave_contents,imgID1,imgID2,posttime) 
-        values ('hosshi454519119','うわーそれえぐいって!!');
+        values ('hosshi454519119','うわーそれえぐいって!!','2023-10-05 09:17:03');
      
 insert into t_wave (userID,wave_contents,imgID1,imgID2,posttime) 
-        values ('hosshi454519119','普通に遅刻した');
+        values ('hosshi454519119','普通に遅刻した','2023-10-05 09:21:04');
 
 insert into t_wave (userID,wave_contents,imgID1,imgID2,posttime) 
-        values ('hosshi454519119','え!?それってどういう.....');
+        values ('hosshi454519119','え!?それってどういう.....','2023-10-05 10:30:29');
 
 insert into t_wave (userID,wave_contents,imgID1,imgID2,posttime) 
-        values ('hosshi454519119','あーなるほど、そういうことね');
+        values ('hosshi454519119','あーなるほど、そういうことね','2023-10-05 10:31:18');
 
 insert into t_wave (userID,wave_contents,imgID1,imgID2,posttime) 
-        values ('take','丸亀しか勝たん!!!');
+        values ('take','丸亀しか勝たん!!!','2023-10-05 12:41:42');
 
 insert into t_wave (userID,wave_contents,imgID1,imgID2,posttime) 
-        values ('take','ういーす');
+        values ('take','ういーす','2023-10-06 09:10:11');
 
 insert into t_wave (userID,wave_contents,imgID1,imgID2,posttime) 
-        values ('take','まじで、だるい');
+        values ('take','まじで、だるい','2023-10-06 09:16:59');
 
 insert into t_wave (userID,wave_contents,imgID1,imgID2,posttime) 
-        values ('take','肉食いに行くわ');
+        values ('take','肉食いに行くわ','2023-10-06 12:39:08');
 
 insert into t_wave (userID,wave_contents,imgID1,imgID2,posttime) 
         values ('shinnichi','120人全員片岡利幸になった<br>
-ウケル');
+ウケル','2023-10-05 22:33:43');
 
 insert into t_wave (userID,wave_contents,imgID1,imgID2,posttime) 
-        values ('shinnichi','とてつもなく腹痛い');
+        values ('shinnichi','とてつもなく腹痛い','2023-10-06 08:22:34');
 
 insert into t_wave (userID,wave_contents,imgID1,imgID2,posttime) 
-        values ('shinnichi','胃に穴空いたわ');
+        values ('shinnichi','胃に穴空いたわ','2023-10-06 11:04:35');
 
 insert into t_wave (userID,wave_contents,imgID1,imgID2,posttime) 
-        values ('shinnichi','過敏性腸症候群ウヒョーー');
+        values ('shinnichi','過敏性腸症候群ウヒョーー','2023-10-06 11:09:02');
 
 insert into t_wave (userID,wave_contents,imgID1,imgID2,posttime) 
-        values ('tuttakatuttaka','うーん'); 
+        values ('tuttakatuttaka','うーん','2023-10-05 12:43:15'); 
 
 insert into t_wave (userID,wave_contents,imgID1,imgID2,posttime) 
-        values ('tuttakatuttaka','やばい');  
+        values ('tuttakatuttaka','やばい','2023-10-05 12:51:44');  
 
 insert into t_wave (userID,wave_contents,imgID1,imgID2,posttime) 
-        values ('tuttakatuttaka','なんとかギリ....'); 
+        values ('tuttakatuttaka','なんとかギリ....','2023-10-05 12:57:50'); 
 
 insert into t_wave (userID,wave_contents,imgID1,imgID2,posttime) 
-        values ('tuttakatuttaka','丸亀RTA成功!!!!!!!'); 
+        values ('tuttakatuttaka','丸亀時間内に行って戻ってこれた!!!!!!!','2023-10-05 12:59:21'); 
 
 
 
