@@ -49,7 +49,7 @@ public class login extends HttpServlet{
                     //テーブル
                     select_Beans.setTable("t_wave");
                     //条件
-                    select_Beans.setConditions("userID = '" + userIDStr + "'");
+                    select_Beans.setConditions("userID like '" + userIDStr + "'");
                     //フィールド
                     select_Beans.setFields("count(*)");
 
@@ -75,7 +75,7 @@ public class login extends HttpServlet{
                     //テーブル
                     select_Beans.setTable("t_follow");
                     //条件
-                    select_Beans.setConditions("be_follow = '" + userIDStr + "'");
+                    select_Beans.setConditions("be_follow like '" + userIDStr + "'");
                     //フィールド
                     select_Beans.setFields("count(*)");
 
@@ -101,7 +101,7 @@ public class login extends HttpServlet{
                     //テーブル
                     select_Beans.setTable("t_follow");
                     //条件
-                    select_Beans.setConditions("tofollow = '" + userIDStr + "'");
+                    select_Beans.setConditions("tofollow like '" + userIDStr + "'");
                     //フィールド
                     select_Beans.setFields("count(*)");
 
@@ -127,7 +127,7 @@ public class login extends HttpServlet{
                     //テーブル
                     select_Beans.setTable("t_user");
                     //条件
-                    select_Beans.setConditions("userID = '" + userIDStr + "'");
+                    select_Beans.setConditions("userID like '" + userIDStr + "'");
                     //フィールド
                     select_Beans.setFields("userID,user_name,comment,user_img");
 
