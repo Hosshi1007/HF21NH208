@@ -234,7 +234,7 @@ insert into t_wave (userID,wave_contents,imgID1,imgID2,imgID3,posttime)
                                  応募条件　　アカウントのフォローとこのwaveをRT<br>
                                  応募期間　　11月21日13時〜12月05日13時<br>
                                  当選連絡　　DMにて追ってご連絡をします。DMが受け取れるようにしてください。'
-                                 ,'/HF21/image/20.jpg','2023-11-21 12:45:00');
+                                 ,'/HF21/image/3.JPG','2023-11-21 12:45:00');
 
 insert into t_follow (followID,tofollow,be_follow) values (1,'take','yamada');
 insert into t_follow (followID,tofollow,be_follow) values (2,'yamada','take');
