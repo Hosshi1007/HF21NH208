@@ -225,7 +225,10 @@ insert into t_wave (userID,wave_contents,imgID1,imgID2,imgID3,posttime)
         values ('take','/HF21/image/19.JPG','2023-11-05 15:30:10');
 
 insert into t_wave (userID,wave_contents,imgID1,imgID2,imgID3,posttime) 
-        values ('tosshi3333','性別テーブルのフィールドIDがsexとか信じられない!<br>
+        values ('take','/HF21/image/20.png','2023-11-05 15:30:11');
+
+insert into t_wave (userID,wave_contents,imgID1,imgID2,imgID3,posttime) 
+        values ('hosshi454519119','性別テーブルのフィールドIDがsexとか信じられない!<br>
                               そこは普通genderでしょ!?<br>
                               やっぱりオスは性的な事しか考えてない下劣な生き物なんだわ。','2023-11-13 14:16:34');
 
