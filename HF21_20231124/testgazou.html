@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>画像アップロード</title>
+  <style>
+    #imageList {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .thumbnail {
+      width: 100px;
+      height: 100px;
+      margin: 5px;
+      cursor: pointer;
+    }
+
+    #selectedImage {
+      max-width: 100%;
+      max-height: 300px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>画像を選択</h1>
+  
+  <div id="imageList"></div>
+
+  <img id="selectedImage" alt="選択された画像">
+
+  <script>
+    // 画像一覧を表示
+    function showImages(images) {
+      const imageList = document.getElementById('imageList');
+      imageList.innerHTML = '';
+
+      images.forEach((image, index) => {
+        const imgElement = document.createElement('img');
+        imgElement.src = image;
+        imgElement.alt = `Image ${index + 1}`;
+        imgElement.className = 'thumbnail';
+        imgElement.onclick = () => selectImage(image);
+        imageList.appendChild(imgElement);
+      });
+    }
+
+    // 画像を選択
+    function selectImage(selectedImageUrl) {
+      const selectedImage = document.getElementById('selectedImage');
+      selectedImage.src = selectedImageUrl;
+      selectedImage.style.display = 'block';
+    }
+
+    // カメラから画像を取得
+    async function captureImage() {
+      const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+      const video = document.createElement('video');
+      video.width = 640;
+      video.height = 480;
+      video.srcObject = stream;
+      video.play();
+
+      video.onclick = () => {
+        const canvas = document.createElement('canvas');
+        canvas.width = video.videoWidth;
+        canvas.height = video.videoHeight;
+        canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
+        const imageDataURL = canvas.toDataURL('image/png');
+        showImages([imageDataURL]);
+        stream.getTracks().forEach(track => track.stop());
+      };
+
+      document.body.appendChild(video);
+    }
+
+    // ギャラリーから画像を選択
+    function selectFromGallery() {
+      const input = document.createElement('input');
+      input.type = 'file';
+      input.accept = 'image/*';
+      input.onchange = (event) => {
+        const selectedFiles = event.target.files;
+        const selectedImages = Array.from(selectedFiles).map(file => URL.createObjectURL(file));
+        showImages(selectedImages);
+      };
+      input.click();
+    }
+
+    // ページロード時に実行
+    window.onload = function () {
+      const captureButton = document.createElement('button');
+      captureButton.textContent = 'カメラで撮影';
+      captureButton.onclick = captureImage;
+      document.body.appendChild(captureButton);
+
+      const galleryButton = document.createElement('button');
+      galleryButton.textContent = 'ギャラリーから選択';
+      galleryButton.onclick = selectFromGallery;
+      document.body.appendChild(galleryButton);
+    };
+  </script>
+</body>
+</html>
