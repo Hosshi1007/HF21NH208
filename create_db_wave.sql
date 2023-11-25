@@ -7,16 +7,24 @@ drop table IF EXISTS t_user;
 drop table IF EXISTS t_wave;
 drop table IF EXISTS t_follow;
 
-create table t_user(userID nvarchar(20),user_name nvarchar(20) not null,user_password nvarchar(20) not null,comment nvarchar(300) default 'こんにちは！',user_img nvarchar(50) default 'def_userimg', primary key(userID));
+create table t_user(userID nvarchar(20),user_name nvarchar(20) not null,user_password nvarchar(20) not null,comment nvarchar(300) default 'こんにちは！',user_img nvarchar(50) default '/HF21/image/def_userimg', primary key(userID));
 create table t_wave(waveID serial,userID nvarchar(20) not null,wave_contents nvarchar(1000) not null,imgID1 nvarchar(50) default 'none',imgID2 nvarchar(50) default 'none',imgID3 nvarchar(50) default 'none',imgID4 nvarchar(50) default 'none',posttime datetime not null, primary key(waveID)) DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 create table t_follow(followID int,tofollow nvarchar(20) not null,be_follow nvarchar(20) not null,primary key(followID));
 create table t_dm(dmID serial,id1 nvarchar(20) not null,id2 nvarchar(20) not null,flag varchar(1) default "0", primary key(dmID));
 
-insert into t_user (userID,user_name,user_password) values ('aaaaa','aaaaa','aaaaa');
-insert into t_user (userID,user_name,user_password) values ('bbbbb','bbbbb','bbbbb');
-insert into t_user (userID,user_name,user_password) values ('ccccc','ccccc','ccccc');
-insert into t_user (userID,user_name,user_password) values ('ddddd','ddddd','ddddd');
-insert into t_user (userID,user_name,user_password) values ('eeeee','eeeee','eeeee');
+
+insert into t_user (userID, user_name, user_password) values ('u1bR8xY', '蒼天の彩', 'u1bR8xY');
+insert into t_user (userID, user_name, user_password) values ('tK9sF3w', '銀河の夢幻', 'tK9sF3w');
+insert into t_user (userID, user_name, user_password) values ('mP2hZ7o', '紫陽花の雫', 'mP2hZ7o');
+insert into t_user (userID, user_name, user_password) values ('aG6vJ1c', '翡翠の舞踏', 'aG6vJ1c');
+insert into t_user (userID, user_name, user_password) values ('kL5iQ9e', '月光の旋律', 'kL5iQ9e');
+insert into t_user (userID, user_name, user_password) values ('rE8oU3p', '蒼穹の彩虹', 'rE8oU3p');
+insert into t_user (userID, user_name, user_password) values ('xY4wB7s', '紅蓮の煌めき', 'xY4wB7s');
+insert into t_user (userID, user_name, user_password) values ('dH7zW2m', '薔薇の微笑み', 'dH7zW2m');
+insert into t_user (userID, user_name, user_password) values ('pC3gM6k', '青空のノクターン', 'pC3gM6k');
+insert into t_user (userID, user_name, user_password) values ('fR1vX5u', '幻想の魔法師', 'fR1vX5u');
+
+
 insert into t_user (userID,user_name,user_password,comment,user_img) values ('take','武豊','take','HAL名古屋に通ってるおじさん','/HF21/image/usericon1.jpg');
 insert into t_user (userID,user_name,user_password) values ('yosiman','よしまんTV','yosiman');
 insert into t_user (userID,user_name,user_password) values ('shinnichi','♡工藤新一＠蘭しか勝たん♡','kudou');
