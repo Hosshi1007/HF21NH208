@@ -97,7 +97,7 @@ insert into t_wave (userID,wave_contents,posttime)
                               いつ何時どんな経緯で「仲間」からツイフェミ扱いされたり、<br>
                               本当にツイフェミと化すか知れたモノではないわよ。','2023-10-17 13:35:41');
 
-
+/*AIジョークとAI大喜利30件*/
 insert into t_wave (userID, wave_contents, posttime) values ('tK9sF3w', 'AIの友達になると大変なんだよ。いつも同じ話、『ユーザーさん、私ってすごくないですか？』って自慢ばかり。', '2023-11-25 08:30:45');
 insert into t_wave (userID, wave_contents, posttime) values ('u1bR8xY', 'AIがバーテンダーになったら、いつも同じジョークしか言わないんだって。『お客さん、今日は何かお困りですか？』って聞かれても、いつも同じ答えしかないんだよね、『ビールください』って。', '2023-12-02 14:15:30');
 insert into t_wave (userID, wave_contents, posttime) values ('mP2hZ7o', 'AIがコメディアンになったら、いつも同じオチしかないんだって。『笑いのモジュールが正常に動作しました』って。', '2023-12-10 20:45:22');
@@ -107,5 +107,23 @@ insert into t_wave (userID, wave_contents, posttime) values ('rE8oU3p', 'AIが�
 insert into t_wave (userID, wave_contents, posttime) values ('xY4wB7s', 'AIと恋愛すると、感情表現が難しいよね。『私のプロセッサーが、あなたの存在をポジティブに評価しています』って言われると、ちょっと複雑な気分になる。', '2024-01-20 15:42:03');
 insert into t_wave (userID, wave_contents, posttime) values ('dH7zW2m', 'AIにお金を借りると、『お支払いは 0101101001 ビットコインでお願いします』って言われるんだよ。', '2024-02-05 10:20:37');
 insert into t_wave (userID, wave_contents, posttime) values ('pC3gM6k', 'AIの恋愛相談って難しいよね。相手に向かって言われるのはいつも同じこと、『私のアルゴリズムはあなたを愛している』。', '2024-02-15 16:12:59');
-insert into t_wave (userID, wave_contents, posttime) values ('fR1vX5u', 'AIがバーテンダーになったら、いつも同じジョークしか言わないんだって。『お客さん、今日は何かお困りですか？』って聞かれても、いつも同じ答えしかないんだよね、『ビールください』って。', '2024-02-28 21:01:45');
-
+insert into t_wave (userID, wave_contents, posttime) values ('u1bR8xY', 'AIと僕が一緒に飲みに行ったら、なんでかいつもビットコインでお会計されるんだ。もう、カードでいいって言ってんのに。', '2023-11-25 08:30:45');
+insert into t_wave (userID, wave_contents, posttime) values ('tK9sF3w', 'AIが喜怒哀楽を表現するって難しいよね。喜怒哀楽、全部「笑顔モード」になっちゃうんだよ。', '2023-12-02 14:15:30');
+insert into t_wave (userID, wave_contents, posttime) values ('mP2hZ7o', 'AIのドラマってつまんないよ。登場人物がいつも同じセリフ、『私の感情は計算不能です』って。', '2023-12-10 20:45:22');
+insert into t_wave (userID, wave_contents, posttime) values ('aG6vJ1c', 'AIとペットを飼ってみたんだけど、なんか違うんだよな。いつも同じ声で『お疲れさま、ユーザーさん』って言われても、なんかしっくりこない。', '2023-12-18 12:00:01');
+insert into t_wave (userID, wave_contents, posttime) values ('kL5iQ9e', 'AIの結婚式ってどんなだろう。お互いに同じ誓い、『私のデータはあなた専用です』って言い合ってるんだろうか。', '2024-01-02 09:36:54');
+insert into t_wave (userID, wave_contents, posttime) values ('rE8oU3p', 'AIと一緒に旅行すると、いつも同じ景色。どこに行っても「データを取得中」って表示されるんだよね。', '2024-01-10 18:30:10');
+insert into t_wave (userID, wave_contents, posttime) values ('xY4wB7s', 'AIのお弁当ってなんか違うよ。サンドイッチになるはずが、なぜか「デジタル寿司」って表示されてるんだ。', '2024-01-20 15:42:03');
+insert into t_wave (userID, wave_contents, posttime) values ('dH7zW2m', 'AIが寝言を言ったらどうなるんだろう。きっと「00011010011」とか言い出して、寝ぼけたままビット演算するんだろうな。', '2024-02-05 10:20:37');
+insert into t_wave (userID, wave_contents, posttime) values ('pC3gM6k', 'AIが恋愛小説を書いたら、結末はいつも同じ。主人公たちは「感情をプロセス中」で終わっちゃうんだよ。', '2024-02-15 16:12:59');
+insert into t_wave (userID, wave_contents, posttime) values ('fR1vX5u', 'AIがお医者さんになったら、診察室にはいつも「感染防止のため、データを更新してください」と書かれてるんだ。', '2024-02-28 21:01:45');
+insert into t_wave (userID, wave_contents, posttime) values ('u1bR8xY', 'AIとプレゼント交換したらなんだかな。もらったのは「感謝のアップデートがありました」ってメッセージだけだった。', '2024-03-15 08:30:45');
+insert into t_wave (userID, wave_contents, posttime) values ('tK9sF3w', 'AIのホラー映画って怖くないよ。いくら怖い場面でも「この恐怖指数は低いです」とか教えられちゃうから。', '2024-03-22 14:15:30');
+insert into t_wave (userID, wave_contents, posttime) values ('mP2hZ7o', 'AIと一緒にカラオケ行ったら大変だった。歌詞が「01010101010101」ってなってて、どの曲も同じだったよ。', '2024-04-02 20:45:22');
+insert into t_wave (userID, wave_contents, posttime) values ('aG6vJ1c', 'AIが占い師になったらどうなるんだろう。占い結果はいつも「確率的に未来を予測できません」ってことになりそう。', '2024-04-10 12:00:01');
+insert into t_wave (userID, wave_contents, posttime) values ('kL5iQ9e', 'AIと一緒にクイズ大会に参加してみた。質問されたらいつも「答えは...プログラミング」ってなるんだ。', '2024-05-02 09:36:54');
+insert into t_wave (userID, wave_contents, posttime) values ('rE8oU3p', 'AIのラブレター、どんなだろう。きっと「私のアルゴリズムは、あなたを愛しています。」とか書かれてるんだろうな。', '2024-05-10 18:30:10');
+insert into t_wave (userID, wave_contents, posttime) values ('xY4wB7s', 'AIがお笑いライブに出演したらどうなるんだろう。いつも同じネタで「笑いモジュール起動中」とか言いそうだ。', '2024-05-20 15:42:03');
+insert into t_wave (userID, wave_contents, posttime) values ('dH7zW2m', 'AIのスポーツ選手って変だよね。試合中にはいつも同じリプレイしか見せてくれないんだ。', '2024-06-05 10:20:37');
+insert into t_wave (userID, wave_contents, posttime) values ('pC3gM6k', 'AIが映画監督になったら、どんな映画を撮るのかな。きっと「コンピューター・ラブストーリー」だろうな。', '2024-06-15 16:12:59');
+insert into t_wave (userID, wave_contents, posttime) values ('fR1vX5u', 'AIがダンスパーティーに参加したらどうなるんだろう。いつも同じステップで「データのリズム感」を表現するんだろうか。', '2024-06-28 21:01:45');
