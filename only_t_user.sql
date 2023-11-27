@@ -127,3 +127,10 @@ insert into t_wave (userID, wave_contents, posttime) values ('xY4wB7s', 'AIが�
 insert into t_wave (userID, wave_contents, posttime) values ('dH7zW2m', 'AIのスポーツ選手って変だよね。試合中にはいつも同じリプレイしか見せてくれないんだ。', '2024-06-05 10:20:37');
 insert into t_wave (userID, wave_contents, posttime) values ('pC3gM6k', 'AIが映画監督になったら、どんな映画を撮るのかな。きっと「コンピューター・ラブストーリー」だろうな。', '2024-06-15 16:12:59');
 insert into t_wave (userID, wave_contents, posttime) values ('fR1vX5u', 'AIがダンスパーティーに参加したらどうなるんだろう。いつも同じステップで「データのリズム感」を表現するんだろうか。', '2024-06-28 21:01:45');
+
+
+/*2021-01-01 00:00:00 から 2023-10-31 23:59:59 のランダムな日時で更新*/
+UPDATE t_wave SET posttime = FROM_UNIXTIME(
+    UNIX_TIMESTAMP('2021-01-01 00:00:00') +
+    FLOOR(RAND() * (UNIX_TIMESTAMP('2023-10-31 23:59:59') - UNIX_TIMESTAMP('2021-01-01 00:00:00')))
+);
