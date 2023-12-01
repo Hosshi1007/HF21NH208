@@ -1,0 +1,16 @@
+UPDATE t_wave SET imgID1 = 'image/cat.jpg'  WHERE waveID = 1;
+UPDATE t_wave SET imgID1 = 'image/cat.jpg',imgID2 = 'image/cat2.jpg'  WHERE waveID = 2;
+
+UPDATE t_wave SET imgID1 = 'image/cat.jpg'
+		 ,imgID2 = 'image/cat2.jpg'
+		 ,imgID3 = 'image/cat.jpg' WHERE waveID = 3;
+UPDATE t_wave SET imgID1 = 'image/cat.jpg'
+		 ,imgID2 = 'image/cat2.jpg'
+		 ,imgID3 = 'image/cat.jpg'
+		 ,imgID4 = 'image/cat2.jpg' WHERE waveID = 4;
+UPDATE t_user SET user_img ='/HF21/image/susuru.jpg' WHERE userID ='TekkaMaki_0141';
+UPDATE t_user SET user_img ='/HF21/image/discordicon.png' WHERE userID ='tosshi3333';
+UPDATE t_user SET user_img ='/HF21/image/kudou.png' WHERE userID ='shinnichi';
+UPDATE t_user SET user_img ='/HF21/image/maru.png' WHERE userID ='tuttakatuttaka';
+UPDATE t_user SET user_img ='/HF21/image/hukurou.png' WHERE userID ='hosshi454519119';
+ UPDATE t_user SET user_img ='/HF21/image/tabako.png' WHERE userID ='masamasa';
