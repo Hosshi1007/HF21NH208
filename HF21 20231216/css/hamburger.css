@@ -1,0 +1,117 @@
+*, *:before, *:after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.hdrprfile{
+ width:40px;
+ height:40px;
+ border-radius: 50%;
+}
+ol, ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+.cp_cont {
+  position: fixed; /* 修正：常に表示されるように変更 */
+  width: 100%;	
+  margin-left: 0; /* 修正：初期状態ではメニューが閉じているので0 */
+  transition: margin-left 0.53s cubic-bezier(.38,.52,.23,.99);
+}
+.cp_offcm04 {
+	position: absolute;
+	left: 20px;
+	display: inline-block;
+}
+/* menu */
+.cp_offcm04 .cp_menu{
+	position: fixed;
+	top: 0;
+	left: -100vw;
+	width: 85vw;
+	height: 100%;
+	cursor: pointer;
+	background-color: white;
+	-webkit-transition: 0.53s transform;
+	        transition: 0.53s transform;
+	-webkit-transition-timing-function: cubic-bezier(.38,.52,.23,.99);
+	        transition-timing-function: cubic-bezier(.38,.52,.23,.99);
+	border-right:solid 1px rgb(239,243,244,0.5);
+	box-shadow: 3px 3px 20px rgba(0, 0, 0 , 0.2);
+}
+.cp_offcm04 .cp_menu ul {
+	margin: 0;
+	padding: 0;
+}
+.cp_offcm04 .cp_menu li {
+	list-style: none;
+}
+.cp_offcm04 .cp_menu li a {
+	display: block;
+	padding: 20px;
+	text-decoration: none;
+	color:black;
+	transition: background-color 0.3s;
+}
+.cp_offcm04 .cp_menu li a:hover {
+	opacity: 0.5;
+}
+.cp_offcm04 #cp_toggle04 {
+	position: absolute;
+	display: none;
+	opacity: 0;
+}
+.cp_offcm04 #cp_toggle04:checked ~ .cp_menu {
+	-webkit-transform: translateX(100vw);
+	        transform: translateX(100vw);
+	z-index: 10000;
+}
+/* menu toggle */
+.cp_offcm04 #cp_toggle04 ~ label {
+	display:	block;
+	padding: 0.5em;
+	cursor: pointer;
+/*	-webkit-transition: 0.5s transform;*/
+/*	        transition: 0.5s transform;*/
+/*	-webkit-transition-timing-function: cubic-bezier(.61,-0.38,.37,1.27);*/
+/*	        transition-timing-function: cubic-bezier(.61,-0.38,.37,1.27);*/
+	text-align: center;
+	color: #333333;
+}
+.cp_offcm04 #cp_toggle04:checked ~ label {
+	-webkit-transform: translateX(-200vw);
+	        transform: translateX(-200vw);
+}
+/* .cp_offcm04 #cp_toggle04 ~ label::before {
+	font-family: 'FontAwesome';
+	content: '\f0c9';
+	font-size: 2em;
+} */
+.cp_offcm04 #cp_toggle04:checked ~ main#smart-main {
+  margin-left:85%;
+}
+.cp_offcm04 #cp_toggle04:checked ~ label::before {
+	content: '\f00d';
+}
+/* contents */
+.cp_contents {
+	color: #333333;
+	text-align: center;
+}
+		
+#cp_toggle04:checked ~ .hamburger-demo-cover{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 9997;
+	background: rgba(3,3,3,.7);
+	display: block;
+}
+#cp_toggle04:checked ~ .hamburger-demo-switch{
+	position: fixed;
+}
