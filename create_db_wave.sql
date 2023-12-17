@@ -6,6 +6,7 @@ use db_wave;
 drop table IF EXISTS t_user;
 drop table IF EXISTS t_wave;
 drop table IF EXISTS t_follow;
+drop table IF EXISTS t_dm;
 
 create table t_user(userID nvarchar(20),user_name nvarchar(20) not null,user_password nvarchar(20) not null,comment nvarchar(300) default 'こんにちは！',user_img nvarchar(50) default '/HF21/image/def_userimg', primary key(userID));
 create table t_wave(waveID serial,userID nvarchar(20) not null,wave_contents nvarchar(1000) not null,imgID1 nvarchar(50) default 'none',imgID2 nvarchar(50) default 'none',imgID3 nvarchar(50) default 'none',imgID4 nvarchar(50) default 'none',posttime datetime not null, primary key(waveID)) DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
