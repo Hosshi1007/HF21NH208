@@ -10,7 +10,7 @@ drop table IF EXISTS t_follow;
 create table t_user(userID nvarchar(20),user_name nvarchar(20) not null,user_password nvarchar(20) not null,comment nvarchar(300) default 'こんにちは！',user_img nvarchar(50) default '/HF21/image/def_userimg', primary key(userID));
 create table t_wave(waveID serial,userID nvarchar(20) not null,wave_contents nvarchar(1000) not null,imgID1 nvarchar(50) default 'none',imgID2 nvarchar(50) default 'none',imgID3 nvarchar(50) default 'none',imgID4 nvarchar(50) default 'none',posttime datetime not null, primary key(waveID)) DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 create table t_follow(followID int,tofollow nvarchar(20) not null,be_follow nvarchar(20) not null,primary key(followID));
-create table t_dm(dmID serial,id1 nvarchar(20) not null,id2 nvarchar(20) not null,flag varchar(1) default "0", primary key(dmID));
+create table t_dm(dmID serial,name nvarchar(50) not null,follower nvarchar(50) not null,time nvarchar(50) not null,text varchar(300), primary key(dmID));
 
 
 insert into t_user (userID, user_name, user_password) values ('u1bR8xY', '蒼天の彩', 'u1bR8xY');
@@ -148,8 +148,7 @@ insert into t_wave (userID,wave_contents,posttime)
         あ゙だまい゙でーーーーーーーーーー!!!!!!!<br>
         の゙み゙すぎたーーーーーーーーーーーーーーーーーー!!!!!!!','2023-10-05 09:34:16');
 
-insert into t_wave (userID,wave_contents,posttime) 
-        values ('hosshi454519119','うわーそれえぐいって!!','2023-10-05 09:17:03');
+insert into t_wave (userID,wave_contents,posttime) values ('hosshi454519119','うわーそれえぐいって!!','2023-10-05 09:17:03');
      
 insert into t_wave (userID,wave_contents,posttime) 
         values ('hosshi454519119','普通に遅刻した','2023-10-05 09:21:04');
