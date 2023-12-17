@@ -13,6 +13,9 @@ create table t_wave(waveID serial,userID nvarchar(20) not null,wave_contents nva
 create table t_follow(followID int,tofollow nvarchar(20) not null,be_follow nvarchar(20) not null,primary key(followID));
 create table t_dm(dmID serial,name nvarchar(50) not null,follower nvarchar(50) not null,time nvarchar(50) not null,text varchar(300), primary key(dmID));
 
+insert into t_dm (name,follower,time,text) values ('take', 'shinnichi','2023-12-12 20:25:07','真実はいつも一つとは限らない');
+insert into t_dm (name,follower,time,text) values ('shinnichi', 'take','2023-12-12 20:26:07','真実はいつも一つ');
+
 
 insert into t_user (userID, user_name, user_password) values ('u1bR8xY', '蒼天の彩', 'u1bR8xY');
 insert into t_user (userID, user_name, user_password) values ('tK9sF3w', '銀河の夢幻', 'tK9sF3w');
