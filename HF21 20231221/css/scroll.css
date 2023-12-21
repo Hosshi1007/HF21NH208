@@ -1,0 +1,14 @@
+.hide{
+  transform: translateY(-100%); /* 上に消えるようにする */
+}
+
+#scrollArea{
+    background-color: rgb(255,255,255,0.3);
+    position: fixed; /* 固定して表示されるようにする */
+    width: 100%;
+    top: 0; /* 表示場所を一番上に */
+    transition: .5s; /* スクロール時に一瞬で消えると物足りないので.hideの処理を0.5秒で行う */
+    z-index: 100; /* 前面に表示されるようにする */
+    backdrop-filter: blur(28.5px);
+    -webkit-backdrop-filter: blur(28.5px);
+}
